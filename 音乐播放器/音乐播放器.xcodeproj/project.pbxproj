@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		04578E961C0A84B500335C05 /* HYWLrcCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04578E951C0A84B500335C05 /* HYWLrcCell.m */; settings = {ASSET_TAGS = (); }; };
 		04578E981C0A87C200335C05 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04578E971C0A87C200335C05 /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
+		04578E9C1C0A89BE00335C05 /* UIImage+image.m in Sources */ = {isa = PBXBuildFile; fileRef = 04578E9B1C0A89BE00335C05 /* UIImage+image.m */; settings = {ASSET_TAGS = (); }; };
 		04585FE91C09C0C700A3DDD1 /* HYWMusicsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04585FE81C09C0C700A3DDD1 /* HYWMusicsController.m */; settings = {ASSET_TAGS = (); }; };
 		04585FEC1C09CA6200A3DDD1 /* Musics.m in Sources */ = {isa = PBXBuildFile; fileRef = 04585FEB1C09CA6200A3DDD1 /* Musics.m */; settings = {ASSET_TAGS = (); }; };
 		0458601A1C09CFBB00A3DDD1 /* bb@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04585FEF1C09CFBB00A3DDD1 /* bb@2x.jpg */; settings = {ASSET_TAGS = (); }; };
@@ -73,6 +74,8 @@
 		04578E941C0A84B500335C05 /* HYWLrcCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYWLrcCell.h; sourceTree = "<group>"; };
 		04578E951C0A84B500335C05 /* HYWLrcCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYWLrcCell.m; sourceTree = "<group>"; };
 		04578E971C0A87C200335C05 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		04578E9A1C0A89BE00335C05 /* UIImage+image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+image.h"; sourceTree = "<group>"; };
+		04578E9B1C0A89BE00335C05 /* UIImage+image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+image.m"; sourceTree = "<group>"; };
 		04585FE71C09C0C700A3DDD1 /* HYWMusicsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYWMusicsController.h; sourceTree = "<group>"; };
 		04585FE81C09C0C700A3DDD1 /* HYWMusicsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYWMusicsController.m; sourceTree = "<group>"; };
 		04585FEA1C09CA6200A3DDD1 /* Musics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Musics.h; sourceTree = "<group>"; };
@@ -160,6 +163,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04578E991C0A89BE00335C05 /* UIImage+image */ = {
+			isa = PBXGroup;
+			children = (
+				04578E9A1C0A89BE00335C05 /* UIImage+image.h */,
+				04578E9B1C0A89BE00335C05 /* UIImage+image.m */,
+			);
+			path = "UIImage+image";
+			sourceTree = "<group>";
+		};
 		04585FDE1C09BBA300A3DDD1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +305,7 @@
 		045860441C09D15300A3DDD1 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				04578E991C0A89BE00335C05 /* UIImage+image */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -495,6 +508,7 @@
 				04578E961C0A84B500335C05 /* HYWLrcCell.m in Sources */,
 				0483B9771C08826C0019362B /* AppDelegate.m in Sources */,
 				0458605F1C09D18400A3DDD1 /* MJTypeEncoding.m in Sources */,
+				04578E9C1C0A89BE00335C05 /* UIImage+image.m in Sources */,
 				045860601C09D18400A3DDD1 /* NSObject+MJCoding.m in Sources */,
 				0458605C1C09D18400A3DDD1 /* MJMember.m in Sources */,
 				0458605D1C09D18400A3DDD1 /* MJMethod.m in Sources */,

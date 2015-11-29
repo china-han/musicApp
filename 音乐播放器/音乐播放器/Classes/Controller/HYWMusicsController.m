@@ -9,12 +9,14 @@
 #import "HYWMusicsController.h"
 #import "Musics.h"
 #import "HYWMusicTool.h"
+#import "UIImage+image.h"
 @interface HYWMusicsController () 
 @end
 
 @implementation HYWMusicsController
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.tableView.rowHeight = 80;
    
 }
 
@@ -38,13 +40,14 @@
     UITableViewCell *cell =[tableView dequeueReusableCellWithIdentifier:ID];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
     }
     //取数据
     Musics *music = [HYWMusicTool musics][indexPath.row];
     // 设置cell
     cell.textLabel.text = music.name;
-    cell.backgroundColor = [UIColor yellowColor];
+    cell.imageView.image = [UIImage drawImageWithBroderW:3 color:[UIColor purpleColor] imageName:music.singerIcon];
+    cell.detailTextLabel.text = music.singer;
     //返回cell
     return cell;
 }
