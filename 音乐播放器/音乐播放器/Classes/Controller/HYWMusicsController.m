@@ -10,10 +10,24 @@
 #import "Musics.h"
 #import "HYWMusicTool.h"
 #import "UIImage+image.h"
-@interface HYWMusicsController () 
+#import "HYWPlayingViewController.h"
+#import "HMAudioTool.h"
+@interface HYWMusicsController ()
+@property (nonatomic,strong) HYWPlayingViewController *playingVC;
 @end
 
 @implementation HYWMusicsController
+#pragma mark - 懒加载
+-(HYWPlayingViewController *)playingVC{
+    if (_playingVC == nil) {
+        _playingVC = [[HYWPlayingViewController alloc]init];
+        
+    }
+    return _playingVC;
+}
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.rowHeight = 80;
@@ -25,7 +39,18 @@
    
 }
 
-#pragma mark - Table view data source
+
+
+#pragma mark - 数据源代理方法
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+   // NSLog(@"点击");
+    //获取当前要播放的音乐
+    Musics *music = [HYWMusicTool musics][indexPath.row];
+    //把当前要播放的音乐告诉管理类
+    [HYWMusicTool setCurrentPlayMusic:music];
+    [self.playingVC showWithAnimo];
+    
+}
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

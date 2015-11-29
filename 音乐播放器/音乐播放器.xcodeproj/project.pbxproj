@@ -10,6 +10,8 @@
 		04578E961C0A84B500335C05 /* HYWLrcCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04578E951C0A84B500335C05 /* HYWLrcCell.m */; settings = {ASSET_TAGS = (); }; };
 		04578E981C0A87C200335C05 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04578E971C0A87C200335C05 /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
 		04578E9C1C0A89BE00335C05 /* UIImage+image.m in Sources */ = {isa = PBXBuildFile; fileRef = 04578E9B1C0A89BE00335C05 /* UIImage+image.m */; settings = {ASSET_TAGS = (); }; };
+		04578EA01C0A8EA800335C05 /* HYWPlayingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04578E9E1C0A8EA800335C05 /* HYWPlayingViewController.m */; settings = {ASSET_TAGS = (); }; };
+		04578EA11C0A8EA800335C05 /* HYWPlayingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04578E9F1C0A8EA800335C05 /* HYWPlayingViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		04585FE91C09C0C700A3DDD1 /* HYWMusicsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04585FE81C09C0C700A3DDD1 /* HYWMusicsController.m */; settings = {ASSET_TAGS = (); }; };
 		04585FEC1C09CA6200A3DDD1 /* Musics.m in Sources */ = {isa = PBXBuildFile; fileRef = 04585FEB1C09CA6200A3DDD1 /* Musics.m */; settings = {ASSET_TAGS = (); }; };
 		0458601A1C09CFBB00A3DDD1 /* bb@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04585FEF1C09CFBB00A3DDD1 /* bb@2x.jpg */; settings = {ASSET_TAGS = (); }; };
@@ -68,6 +70,8 @@
 		0483B97D1C08826C0019362B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0483B97B1C08826C0019362B /* Main.storyboard */; };
 		0483B97F1C08826C0019362B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0483B97E1C08826C0019362B /* Assets.xcassets */; };
 		0483B9821C08826C0019362B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0483B9801C08826C0019362B /* LaunchScreen.storyboard */; };
+		04A4CE781C0AABC800490BD0 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A4CE771C0AABC800490BD0 /* UIView+Frame.m */; settings = {ASSET_TAGS = (); }; };
+		04A4CE801C0AD62C00490BD0 /* HMAudioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A4CE7F1C0AD62C00490BD0 /* HMAudioTool.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +80,9 @@
 		04578E971C0A87C200335C05 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		04578E9A1C0A89BE00335C05 /* UIImage+image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+image.h"; sourceTree = "<group>"; };
 		04578E9B1C0A89BE00335C05 /* UIImage+image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+image.m"; sourceTree = "<group>"; };
+		04578E9D1C0A8EA800335C05 /* HYWPlayingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYWPlayingViewController.h; sourceTree = "<group>"; };
+		04578E9E1C0A8EA800335C05 /* HYWPlayingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYWPlayingViewController.m; sourceTree = "<group>"; };
+		04578E9F1C0A8EA800335C05 /* HYWPlayingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HYWPlayingViewController.xib; sourceTree = "<group>"; };
 		04585FE71C09C0C700A3DDD1 /* HYWMusicsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYWMusicsController.h; sourceTree = "<group>"; };
 		04585FE81C09C0C700A3DDD1 /* HYWMusicsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYWMusicsController.m; sourceTree = "<group>"; };
 		04585FEA1C09CA6200A3DDD1 /* Musics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Musics.h; sourceTree = "<group>"; };
@@ -150,6 +157,10 @@
 		0483B97E1C08826C0019362B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0483B9811C08826C0019362B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0483B9831C08826C0019362B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A4CE761C0AABC800490BD0 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		04A4CE771C0AABC800490BD0 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		04A4CE7E1C0AD62C00490BD0 /* HMAudioTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMAudioTool.h; sourceTree = "<group>"; };
+		04A4CE7F1C0AD62C00490BD0 /* HMAudioTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMAudioTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +199,9 @@
 			children = (
 				04585FE71C09C0C700A3DDD1 /* HYWMusicsController.h */,
 				04585FE81C09C0C700A3DDD1 /* HYWMusicsController.m */,
+				04578E9D1C0A8EA800335C05 /* HYWPlayingViewController.h */,
+				04578E9E1C0A8EA800335C05 /* HYWPlayingViewController.m */,
+				04578E9F1C0A8EA800335C05 /* HYWPlayingViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -204,6 +218,7 @@
 		04585FE21C09BBA300A3DDD1 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				04A4CE7D1C0AD62C00490BD0 /* HMAudioTool（音乐播放） */,
 				045860631C09D22000A3DDD1 /* HYWMusicTool.h */,
 				045860641C09D22000A3DDD1 /* HYWMusicTool.m */,
 			);
@@ -305,6 +320,7 @@
 		045860441C09D15300A3DDD1 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				04A4CE751C0AABC800490BD0 /* UIImage+frame */,
 				04578E991C0A89BE00335C05 /* UIImage+image */,
 			);
 			path = Category;
@@ -386,6 +402,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		04A4CE751C0AABC800490BD0 /* UIImage+frame */ = {
+			isa = PBXGroup;
+			children = (
+				04A4CE761C0AABC800490BD0 /* UIView+Frame.h */,
+				04A4CE771C0AABC800490BD0 /* UIView+Frame.m */,
+			);
+			path = "UIImage+frame";
+			sourceTree = "<group>";
+		};
+		04A4CE7D1C0AD62C00490BD0 /* HMAudioTool（音乐播放） */ = {
+			isa = PBXGroup;
+			children = (
+				04A4CE7E1C0AD62C00490BD0 /* HMAudioTool.h */,
+				04A4CE7F1C0AD62C00490BD0 /* HMAudioTool.m */,
+			);
+			path = "HMAudioTool（音乐播放）";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -448,6 +482,7 @@
 				0458602F1C09CFBB00A3DDD1 /* 10736444.lrc in Resources */,
 				0458603C1C09CFBB00A3DDD1 /* 12309111.mp3 in Resources */,
 				045860291C09CFBB00A3DDD1 /* nanquan_icon@2x.jpg in Resources */,
+				04578EA11C0A8EA800335C05 /* HYWPlayingViewController.xib in Resources */,
 				045860231C09CFBB00A3DDD1 /* jj_icon@2x.png in Resources */,
 				0458603A1C09CFBB00A3DDD1 /* 1201111234.mp3 in Resources */,
 				045860421C09CFBB00A3DDD1 /* Musics.plist in Resources */,
@@ -503,6 +538,7 @@
 				0458605E1C09D18400A3DDD1 /* MJType.m in Sources */,
 				04585FE91C09C0C700A3DDD1 /* HYWMusicsController.m in Sources */,
 				0458605A1C09D18400A3DDD1 /* MJArgument.m in Sources */,
+				04A4CE801C0AD62C00490BD0 /* HMAudioTool.m in Sources */,
 				045860651C09D22000A3DDD1 /* HYWMusicTool.m in Sources */,
 				045860611C09D18400A3DDD1 /* NSObject+MJKeyValue.m in Sources */,
 				04578E961C0A84B500335C05 /* HYWLrcCell.m in Sources */,
@@ -510,6 +546,8 @@
 				0458605F1C09D18400A3DDD1 /* MJTypeEncoding.m in Sources */,
 				04578E9C1C0A89BE00335C05 /* UIImage+image.m in Sources */,
 				045860601C09D18400A3DDD1 /* NSObject+MJCoding.m in Sources */,
+				04578EA01C0A8EA800335C05 /* HYWPlayingViewController.m in Sources */,
+				04A4CE781C0AABC800490BD0 /* UIView+Frame.m in Sources */,
 				0458605C1C09D18400A3DDD1 /* MJMember.m in Sources */,
 				0458605D1C09D18400A3DDD1 /* MJMethod.m in Sources */,
 				0483B9741C08826C0019362B /* main.m in Sources */,
