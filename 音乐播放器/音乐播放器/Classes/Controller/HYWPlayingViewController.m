@@ -13,6 +13,9 @@
 #import "HYWMusicTool.h"
 
 @interface HYWPlayingViewController ()
+
+/// 进度的定时器
+@property (nonatomic,strong) NSTimer *progressTimer;
 ///记录当前播放的音乐
 @property (nonatomic,strong) Musics *playMusic;
 ///音乐播放器
@@ -39,6 +42,8 @@
 - (IBAction)TapProgressBackground:(UITapGestureRecognizer *)sender;
 ///拖拽滑块按钮时更新
 - (IBAction)panSliderButton:(UIPanGestureRecognizer *)sender;
+
+
 
 
 @end
@@ -125,6 +130,10 @@
     [HMAudioTool stopMusicWithName:self.playMusic.filename];
     
 }
+#pragma 对定时器的控制
+///添加进度定时器
+
+
 #pragma mark - 手势方法
 /// 点击进度条时更新
 - (IBAction)TapProgressBackground:(UITapGestureRecognizer *)sender {
@@ -140,14 +149,54 @@
         
         self.sliderLeftConstraint.constant = point.x - self.sliderButton.width*0.5;
     }
+    // 3.改变当前播放的时间
+    CGFloat progressRatio = self.sliderLeftConstraint.constant /
+    (self.view.width - self.sliderButton.width);
+    CGFloat currentTime = progressRatio * self.player.duration;
+    self.player.currentTime = currentTime;
+   // 4.更新文字
     
     
     
 }
 ///拖拽滑块按钮时更新
 - (IBAction)panSliderButton:(UIPanGestureRecognizer *)sender {
+    // 1.获取用户拖拽位移
+    CGPoint point = [sender translationInView:sender.view];
+    // 2.改变slierButton的约束
+    if (self.sliderLeftConstraint.constant + point.x < 0) {
+        self.sliderLeftConstraint.constant = 0;
+    }else if (self.sliderLeftConstraint.constant + point.x > self.view.width - self.sliderButton.width){
+        self.sliderLeftConstraint.constant = self.view.width - self.sliderButton.width - 1;
+    }else{
+        self.sliderLeftConstraint.constant += point.x;
+    }
+    // 3.获取拖拽进度对应的播放时间
+    CGFloat progressRatio = self.sliderLeftConstraint.constant /
+    (self.view.width - self.sliderButton.width);
+    CGFloat currentTime = progressRatio * self.player.duration;
+    // 4.更新文字
+      NSString *currentTimeStr = [self stringWithTime:currentTime];
+    [self.sliderButton setTitle:currentTimeStr forState:UIControlStateNormal];
+    self.showTimeLabel.text = currentTimeStr;
+     // 5.监听拖拽手势状态
+    if (sender.state ==  UIGestureRecognizerStateBegan ) {
+         // 5.1.移除定时器
+        
+         // 5.2.让显示时间的label取消隐藏
+        self.showTimeLabel.hidden = NO;
+    }else if (sender.state == UIGestureRecognizerStateEnded){
+        // 5.1.更新播放时间
+        self.player.currentTime = currentTime;
+        // 5.2.添加定时器
+       
+        // 5.3.让显示时间的label隐藏
+        self.showTimeLabel.hidden = YES;
+    }
+  //为了防止累计，把上次位移清零
+    [sender setTranslation:CGPointZero inView:sender.view];
+    
 }
-
 #pragma mark - 设置时间格式
 - (NSString *)stringWithTime:(NSTimeInterval )time{
     NSInteger mimute = time / 60;
